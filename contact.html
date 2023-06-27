@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techinity.org</title>
+
+    <!-- iconscout cdn-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--montserrat font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+    
+    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <img id="logo__header" src="logo-header.png">
+
+            <ul class="nav__menu">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!--================END OF NAVBAR ==================-->
+
+    
+    <section class="contact">
+        <div class="contaniner contact__container">
+            <aside class="contact__aside">
+                <div class="aside__image">
+                    <img src="contact-img.png" alt="">
+                </div>
+                <h2>Contact Us</h2>   
+                <p>We're open for any suggestion or just to have a chat.</p>
+                <ul class="contact__details">
+                    <li><i class="uil uil-phone-alt"></i><h5>9947 950 950<br>9947 124 555</h5></li>
+                    <li><i class="uil uil-envelope"></i><h5>technitymkd@gmail.com</h5></li>
+                    <li><i class="uil uil-map-marker"></i><h5>CP Plaza, Near Bus Stand Mannarkkad</h5></li>
+                    
+                </ul>
+
+                <ul class="contact__socials">
+                    <li><a href="https://www.facebook.com/profile.php?id=100024746191870"><i class="uil uil-facebook"></i></a></li>
+                    <li><a href="https://instagram.com/technitymannarkkad?igshid=YmMyMTA2M2Y="><i class="uil uil-instagram"></i></a></li>
+                    <li><a href="https://www.google.com/search?q=technity+mannarkkad&rlz=1C1GCEX_enIN1040IN1041&oq=te&aqs=chrome.0.35i39l2j46i67i199i465j69i59j0i67i131i433j69i61l3.1878j0j7&sourceid=chrome&ie=UTF-8"><i class="uil uil-google"></i></a></li>
+                </ul>
+            </aside>
+
+           
+            <form id="contact-form" class="contact__form" onsubmit="sendWhatsAppMessage(event)">
+                <div class="form__names">
+                    <input type="text"  id="name" class="input-field" name="name" placeholder="Name" required>
+                    <input type="text" id="phone"  class="input-field"  name="phone" placeholder="Phone Number" required>
+                    <input type="text" id="location"  class="input-field" name="location" placeholder="Location" required>
+                    <button id="submit-button"  type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+
+
+
+        </div>
+
+
+    </section>
+
+    <section class="map">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.532827468667!2d76.4543347!3d10.9910338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b50f97310f827b2!2sTECHNITY%20SMARTPHONE%20%26%20LAPTOP%20CHIP%20LEVEL%20TRAINING%20INSTITUTE!5e0!3m2!1sen!2sin!4v1676993196951!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <div class="sidebar">
+        <a href="tel:9947124555" class="call-btn">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://instagram.com/technitymannarkkad?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram-btn">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100024746191870" target="_blank" class="facebook-btn">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.google.com/search?q=technity+mannarkkad&rlz=1C1GCEX_enIN1040IN1041&oq=te&aqs=chrome.0.35i39l2j46i67i199i465j69i59j0i67i131i433j69i61l3.1878j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="google-btn">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://wa.me/9947124555" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      
+      
+     <!--================END OF SIDEBAR==================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        
+        <div class="container footer__container">
+   
+            <div class="footer__1">
+                <img src="logo-footer.png" class="logo-footer" alt="">
+            </div>
+            
+           <div class="footer__2">
+               <h4>Our Courses</h4>
+               <ul class="footer__courses">
+                <li><a href="courses.html">Smartphone  Chip  Level  Service  Engineering </a></li>
+                <li><a href="courses.html">Laptop  Chip  Level  Service  Engineering</a></li>
+                <li><a href="courses.html">CCTV  &  Security  Systems</a></li>
+                <li><a href="courses.html">Computer  Hardware  &  Software</a></li>
+            </ul>
+           </div>
+   
+           <div class="footer__3">
+               <h4>Contact Us</h4>
+               <div>
+                   <p><i class="uil uil-location-point"></i> CP Plaza, Near Bus Stand Mannarkkad</p>
+                   <p><i class="uil uil-phone"></i> 04924 226 550</p>
+                   <p><i class="uil uil-mobile-android-alt"></i> 9947 950 950, 9947 124 555</p>
+                   <p><i class="uil uil-envelope"></i> technitymkd@gmail.com</p>
+           </div>
+           <ul class="footer__socials">
+               <li><a href="https://www.facebook.com/profile.php?id=100024746191870"><i class="uil uil-facebook"></i></a></li>
+               <li><a href="https://instagram.com/technitymannarkkad?igshid=YmMyMTA2M2Y="><i class="uil uil-instagram-alt"></i></a> </li>
+               <li><a href="https://www.google.com/search?q=technity+mannarkkad&rlz=1C1GCEX_enIN1040IN1041&oq=te&aqs=chrome.0.35i39l2j46i67i199i465j69i59j0i67i131i433j69i61l3.1878j0j7&sourceid=chrome&ie=UTF-8"><i class="uil uil-google"></i></a></li>
+           </ul>
+       </div>
+         </div>
+         <div class="footer__copy">
+           <small>Copyright &copy; Technitymkd</small>
+       </div>
+       </footer>
+   
+       
+       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+   
+   </body> 
+   </html> 

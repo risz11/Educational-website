@@ -1,0 +1,299 @@
+.smart-section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.smart-heading{
+  margin-top: 0rem;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+ width: 100%;
+ height: auto;
+}
+
+
+.swiper-container{
+  width: 100%;
+}
+
+
+.swiper-slide{
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 200px;
+  padding: 1rem;
+
+  filter: blur(2px);
+
+}
+
+.swiper-slide-active{
+  filter: blur(0px);
+}
+
+.tech-box{
+  position: relative;
+  width: 320px;
+  
+}
+
+.tech-box img{
+  border-radius: 5px;
+  height: 250px;
+ object-fit: fill;
+}
+
+.details{
+  align-items: center;
+  text-align: center;
+  width: 287px;
+  height: 30px;
+  background-color: rgb(53, 48, 104);
+  padding: 1.2rem;
+  border-radius: 5px;
+  color: rgb(209, 209, 225);
+}
+
+.details h2{
+  font-size: 1.2rem;
+}
+
+.details ul{
+  margin-top: -60px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.details  i{
+  color: #f1f0f0;
+}
+
+ .swiper-slide-shadow-left,
+ .swiper-slide-shadow-right {
+  display: none;
+}
+.swiper-button-prev, .swiper-button-next{
+  color: #976ee9 !important;
+}
+
+
+ .swiper-pagination-bullet-active{
+  background:#976ee9;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 80%;
+  width:auto;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.smart-heading2{
+  margin-top: -8rem;
+  text-align: center;
+}
+
+ /*===========================MEDIA QUERIES(PHONES)===============================*/
+ @media screen and (max-width:550px){
+  
+  .container-course{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .swiper-container{
+    height: 100%;
+  }
+
+  .smart-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smart-heading{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+   margin-bottom: 4rem;
+   width: 100%;
+   height: auto;
+   
+}
+
+.swiper-slide{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+
+.details{
+  width: auto;
+  height: 40px;
+}
+
+.slider-title{
+  text-align: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 40%;
+  z-index: 100;
+  cursor: pointer;
+  width: auto;
+}
+
+.swiper-button-prev {
+  left: 2px;
+}
+
+.swiper-button-next {
+  right: 2px;
+}
+
+.swiper-pagination{
+width: auto;
+height: auto;
+position: absolute;
+top:63%;
+}
+
+ }
+
+ @media screen and (max-width: 1024px) {
+
+
+  .smart-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smart-heading{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+   margin-bottom: 4rem;
+   width: 100%;
+   height: auto;
+   
+}
+
+.swiper-slide{
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 40%;
+  z-index: 100;
+  cursor: pointer;
+  width: auto;
+}
+
+.swiper-button-prev {
+  left: 2px;
+}
+
+.swiper-button-next {
+  right: 2px;
+}
+
+.swiper-pagination{
+width: auto;
+height: auto;
+position: absolute;
+top:63%;
+}
+
+}
+
+
+@media screen and (max-height: 1200px) {
+  .swiper-slide {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+  .smart-heading{
+    margin-bottom: 5rem;
+  }
+
+  .smart-heading {
+    top: 10%;
+    margin-top: 0;
+  }
+
+  .smart-section{
+    min-height: 80%;
+  }
+
+}
+
+
+@media screen and (max-height: 768px) {
+  .swiper-slide {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  .smart-heading{
+    margin-bottom: 2rem;
+  }
+
+  .smart-heading {
+    top: 5%;
+    margin-top: 0;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .swiper-slide {
+    margin-bottom: 1rem;
+  }
+  .smart-heading{
+    margin-bottom: 2rem;
+  }
+
+  .smart-heading {
+    top: 3%;
+    margin-top: 0;
+  }
+
+ 
+}
